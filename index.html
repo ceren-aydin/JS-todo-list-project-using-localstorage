@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görev Listesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="headerStyle">
+        <header>Görev Listesi</header>
+    </div>
+
+    <form>
+        <input 
+        class="gorev-GirisAlani"
+        id="content" 
+        name="content" 
+        onkeyup="checkChar()" 
+        onkeydown="checkChar()" 
+        rows="4" 
+        cols="40"
+        placeholder="Görev Ekle..."></input>
+    <button class="gorev-Ekle" type="submit">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </form>
+    
+    <div class="gorev-Container">
+        <div class="uyari">
+            <div id="uyariYazisi">30 karakterden fazla giremezsiniz !</div>
+        </div>
+        <div class="gorev-Listesi"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- <input class="gorev-GirisAlani" type="text" placeholder="Görev Ekle..."></input> -->
